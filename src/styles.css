@@ -15,15 +15,3 @@
   display: flex;
   flex: 1;
 }
-
-.header {
-  border: 1px solid black;
-  display: flex;
-  flex: 1;
-}
-
-.footer {
-  border: 1px solid black;
-  display: flex;
-  flex: 1;
-}
