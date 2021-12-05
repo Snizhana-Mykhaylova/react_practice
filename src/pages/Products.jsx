@@ -1,6 +1,8 @@
+import { useState } from 'react';
 import ProductList from '../components/ProductList';
 
 const Products = () => {
+  const [value, setValue] = useState();
   const products = [
     {
       id: 1,

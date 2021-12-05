@@ -7,7 +7,8 @@ const Menu = () => {
       <a href='/cart'>Cart</a>
       <a href='/order'>Order</a>
       <a href='/profile'>Profile</a>
-      <a href='/profile'>Contacts</a>
+      <a href='/contacts'>Contacts</a>
+      <a href='/counter'>Counter</a>
     </div>
   );
 };
