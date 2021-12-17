@@ -31,6 +31,8 @@ const ProductForm = ({ onAddProduct }) => {
   const [count, setCount] = useState(0);
   const [image, setImage] = useState('phone');
   const [color, setColor] = useState('white');
+  const [insurance, setInsurance] = useState('');
+  const [software, setSoftware] = useState('');
   const [error, setError] = useState('');
 
   // хендлер сабмита
@@ -48,7 +50,9 @@ const ProductForm = ({ onAddProduct }) => {
       price: Number(price),
       count: Number(count),
       img: image,
-      color: color
+      color: color,
+      insurance: insurance,
+      software: software
     };
 
     onAddProduct(newProduct);
@@ -57,6 +61,8 @@ const ProductForm = ({ onAddProduct }) => {
     setCount(0);
     setImage('phone');
     setColor('white');
+    setInsurance(false);
+    setSoftware(false);
     setError('');
   };
 
@@ -66,6 +72,8 @@ const ProductForm = ({ onAddProduct }) => {
   const handlerChangeCount = (e) => setCount(e.target.value);
   const handlerChangeImage = (e) => setImage(e.target.value);
   const handlerChangeColor = (e) => setColor(e.target.value);
+  const handlerChangeInsurance = (e) => setInsurance(e.target.checked);
+  const handlerChangeSoftware = (e) => setSoftware(e.target.checked);
 
   return (
     <form className={classes.productForm} onSubmit={handleSubmit}>
@@ -136,6 +144,25 @@ const ProductForm = ({ onAddProduct }) => {
             onChange={handlerChangeColor}
             checked={color === 'black'}
             value='black'
+          />
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Add options</legend>
+        <label>
+          <span>Advansed insurance 12m</span>{' '}
+          <input
+            type='checkbox'
+            name='insurance'
+            onChange={handlerChangeInsurance}
+          />
+        </label>
+        <label>
+          <span>Install software</span>{' '}
+          <input
+            type='checkbox'
+            name='software'
+            onChange={handlerChangeSoftware}
           />
         </label>
       </fieldset>

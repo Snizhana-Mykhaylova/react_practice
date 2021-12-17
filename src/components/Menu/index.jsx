@@ -9,6 +9,7 @@ const Menu = () => {
       <a href='/profile'>Profile</a>
       <a href='/contacts'>Contacts</a>
       <a href='/counter'>Counter</a>
+      <a href='/timer'>Timer</a>
     </div>
   );
 };
