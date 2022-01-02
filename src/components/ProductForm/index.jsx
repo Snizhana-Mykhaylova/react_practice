@@ -45,7 +45,7 @@ const ProductForm = ({ onAddProduct }) => {
       return;
     }
     const newProduct = {
-      id: Date.now(),
+      // id: Date.now(),
       name,
       price: Number(price),
       count: Number(count),

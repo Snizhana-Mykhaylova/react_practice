@@ -1,15 +1,18 @@
+import { Link } from 'react-router-dom';
+
 const Menu = () => {
   return (
     <div className='menu'>
       <p>menu</p>
-      <a href='/products'>Products</a>
-      <a href='/products/3456'>Products Detail</a>
-      <a href='/cart'>Cart</a>
-      <a href='/order'>Order</a>
-      <a href='/profile'>Profile</a>
-      <a href='/contacts'>Contacts</a>
-      <a href='/counter'>Counter</a>
-      <a href='/timer'>Timer</a>
+
+      <Link to='/react_practice'>Home</Link>
+      <Link to='/products'>Products</Link>
+      <Link to='/cart'>Cart</Link>
+      <Link to='/order'>Order</Link>
+      <Link to='/profile'>Profile</Link>
+      <Link to='/contacts'>Contacts</Link>
+      <Link to='/counter'>Counter</Link>
+      <Link to='/timer'>Timer</Link>
     </div>
   );
 };
