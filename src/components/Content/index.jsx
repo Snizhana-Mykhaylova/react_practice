@@ -22,6 +22,12 @@ const Page404 = lazy(() =>
 const ProductsDetail = lazy(() =>
   import('../../pages/ProductsDetail' /* webpackChunkName: "ProductsDetail" */)
 );
+const HocPage = lazy(() =>
+  import('../../pages/HocPage' /* webpackChunkName: "HocPage" */)
+);
+const ContextDemo = lazy(() =>
+  import('../../pages/Context' /* webpackChunkName: "Context" */)
+);
 // import Products from '../../pages/Products';
 // import Contacts from '../../pages/Contacts';
 // import Counter from '../../pages/Counter';
@@ -45,6 +51,8 @@ const Content = () => {
           <Route path='/counter' element={<Counter />} />
           <Route path='/timer' element={<Timer />} />
           <Route path='/products/:id' element={<ProductsDetail />} />
+          <Route path='/hoc' element={<HocPage />} />
+          <Route path='/context' element={<ContextDemo />} />
 
           <Route path='*' element={<Page404 />} />
         </Routes>

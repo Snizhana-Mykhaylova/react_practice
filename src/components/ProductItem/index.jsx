@@ -31,11 +31,11 @@ const ProductItem = ({ product, onDelete }) => {
           <Card className={classes.card}>
             <p>Name: {product.name}</p>
             <p>Price: {product.price}</p>
-            <p>Color: {product.color}</p>
+            {product.color && <p>Color: {product.color}</p>}
             {product.software || product.insurance ? (
               <p>
                 Options: {product.software ? 'softaware' : null}
-                {product.isurance ? 'insurance' : null}
+                {product.insurance ? 'insurance' : null}
               </p>
             ) : null}
             <img

@@ -13,6 +13,8 @@ const Menu = () => {
       <Link to='/contacts'>Contacts</Link>
       <Link to='/counter'>Counter</Link>
       <Link to='/timer'>Timer</Link>
+      <Link to='/hoc'>HOC</Link>
+      <Link to='/context'>ContextDemo</Link>
     </div>
   );
 };
